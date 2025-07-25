@@ -9,39 +9,63 @@
     body {
       font-size: 1.15em;
       line-height: 1.75;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: black;
+      font-family: 'DM Sans', sans-serif;
     }
     main {
       max-width: 900px;
-      margin: 100px auto;
+      margin: 120px auto 60px;
       padding: 40px;
     }
     h1, h2, h3 {
-      color: red;
+      color: #d40000;
     }
     p {
       margin-bottom: 1em;
     }
-    .home-button {
+    nav {
       position: fixed;
       top: 20px;
-      left: 30px;
-      background: none;
-      border: none;
-      cursor: pointer;
+      right: 30px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
     }
-    .home-button img {
+    nav a {
+      color: white;
+      background-color: #d40000;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #a80000;
+    }
+    .fueguito {
+      background: none;
+      padding: 0;
+    }
+    .fueguito img {
       width: 40px;
+      vertical-align: middle;
       transition: transform 0.3s ease;
     }
-    .home-button img:hover {
+    .fueguito img:hover {
       transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-  <a href="main.html" class="home-button">
-    <img src="img/fueguito.png" alt="Inicio">
-  </a>
+  <nav>
+    <a href="index.html" class="fueguito"><img src="img/fueguito.png" alt="Inicio"></a>
+    <a href="bienal2025.html">III (2025)</a>
+    <a href="bienal2023.html">II (2023)</a>
+    <a href="bienal2021.html">I (2021)</a>
+  </nav>
   <main>
     <h1>BIENAL DE ESCUCHAR II (2023)</h1>
 <p>II BIENAL DE ESCUCHAR</p>
