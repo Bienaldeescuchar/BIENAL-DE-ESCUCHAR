@@ -1,44 +1,46 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 body {
   background-color: black;
   color: white;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+header {
+  padding: 20px;
   text-align: center;
 }
 
 header img {
-  max-width: 150px;
-  margin: 40px auto 20px;
-  display: block;
+  max-width: 120px;
 }
 
-h1 {
-  font-size: 2em;
-  color: red;
-  margin-bottom: 1em;
+nav {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
-a.button {
-  display: inline-block;
-  margin: 10px;
-  padding: 15px 30px;
-  background-color: red;
+nav a {
   color: white;
+  background-color: red;
+  padding: 10px 15px;
+  margin-left: 10px;
   text-decoration: none;
-  font-size: 1.2em;
   border-radius: 5px;
+  font-weight: bold;
 }
 
-a.button:hover {
+nav a:hover {
   background-color: darkred;
 }
 
 main {
-  max-width: 600px;
-  margin: auto;
+  max-width: 800px;
+  margin: 100px auto;
   padding: 20px;
+  line-height: 1.6;
 }
