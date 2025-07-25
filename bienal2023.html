@@ -25,20 +25,23 @@
       position: fixed;
       top: 20px;
       left: 30px;
-      background: red;
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+      background: none;
+      border: none;
+      cursor: pointer;
     }
-    .home-button:hover {
-      background: darkred;
+    .home-button img {
+      width: 40px;
+      transition: transform 0.3s ease;
+    }
+    .home-button img:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-  <a href="main.html" class="home-button">HOME</a>
+  <a href="main.html" class="home-button">
+    <img src="img/fueguito.png" alt="Inicio">
+  </a>
   <main>
     <h1>BIENAL DE ESCUCHAR II (2023)</h1>
 <p>II BIENAL DE ESCUCHAR</p>
