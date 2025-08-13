@@ -87,9 +87,37 @@ h4 a:hover, h4 a:focus {
   <a href="#acefala" class="boton-sede">Acéfala</a>
   <a href="#chela" class="boton-sede">CheLA</a>
 </div>
+
 .boton-sede:hover {
   background: #a80000;
   color: white !important;
+}
+
+/* Barra de botones de sedes en una sola línea */
+.sedes-nav {
+  display: flex;
+  flex-wrap: nowrap;        /* no se parte en varias líneas */
+  justify-content: center;  /* centrado */
+  gap: 8px;                 /* espacio entre botones */
+  overflow-x: auto;         /* scroll horizontal si no entran */
+  padding: 8px 0;
+  white-space: nowrap;      /* refuerzo extra */
+}
+
+.boton-sede {
+  padding: 10px 15px;
+  background: #d40000;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+.boton-sede:hover { background: #a80000; color: white !important; }
+
+/* opcional: botones más compactos en pantallas chicas */
+@media (max-width: 480px){
+  .boton-sede { padding: 8px 10px; font-size: 0.95em; }
 }
   </style>
 </head>
